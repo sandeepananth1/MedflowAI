@@ -16,6 +16,31 @@ across paper records, WhatsApp, PDFs and billing systems.
 Doctors spend valuable consultation time documenting information
 instead of interacting with patients.
 
+                   MedFlow AI
+                       │
+              ┌────────▼────────┐
+              │   Mobile App    │
+              └────────┬────────┘
+                       │
+                 API Gateway
+                       │
+        ┌──────────────┼─────────────┐
+        │              │             │
+        ▼              ▼             ▼
+    Patients       Scheduling      Billing
+    Service         Service        Service
+        │
+        ▼
+   AI Orchestrator
+        │
+ ┌──────┼──────────┬─────────┐
+ ▼      ▼          ▼         ▼
+OCR    LLM        RAG      Speech
+ │
+ ▼
+Structured
+Clinical Data
+
 ---
 
 ## Solution
